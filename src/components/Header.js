@@ -18,8 +18,8 @@ const Header = (props) => {
             setUser(user);
             navigate("/home");
           }
-        },[userName]);
-      });
+        });
+      },[userName]);
   
     const handleAuth = async () => {
         provider.addScope("profile");
